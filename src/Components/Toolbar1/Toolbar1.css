@@ -1,6 +1,4 @@
-#toolbar1{
-	width:	600px;
-	height: 30px;
+#toolbar1 {
 	background-color: #4aa3a3;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -9,7 +7,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin: 5px;
-	font-size: .5em;
+	font-size: 0.5em;
 	padding-left: 10px;
 }
 /*i{

@@ -1,0 +1,10 @@
+.reference-table {
+	height: 30vh;
+	width: 100%;
+	padding: 1em;
+}
+
+.reference-table-editor {
+	height: 100%;
+	width: 100%;
+}

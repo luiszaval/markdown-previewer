@@ -1,0 +1,11 @@
+.app-wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+
+.editable {
+	height: 70vh;
+	width: 100vw;
+	display: flex;
+	padding: 0.5em;
+}
