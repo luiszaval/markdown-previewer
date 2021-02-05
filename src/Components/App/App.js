@@ -1,34 +1,28 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 import Editor from "../Editor/Editor.js";
 import Previewer from "../Previewer/Previewer.js";
 import ReferenceTable from "../ReferenceTable/ReferenceTable.js";
 
-import { changeInput } from "./actions.js";
+import { PLACEHOLDER } from "./constants.js";
 
-const mapStateToProps = (state) => ({
-	input: state.input,
-});
-const mapDispatchToProps = (dispatch) => ({
-	onChangeInput: (event) => dispatch(changeInput(event.target.value)),
-});
+const App = () => {
+	const [input, updateInput] = useState("");
 
-class App extends Component {
-	render() {
-		const { input, onChangeInput } = this.props;
-		return (
-			<div className="app-wrapper">
-				<ReferenceTable />
-				<div className="editable">
-					<Editor input={input} onChange={onChangeInput} />
-					<Previewer input={input} />
-				</div>
+	useEffect(() => {
+		updateInput(PLACEHOLDER);
+	}, []);
+
+	return (
+		<div className="app-wrapper">
+			<ReferenceTable referenceText={input} />
+			<div className="editable">
+				<Editor input={input} onChange={updateInput} />
+				<Previewer input={input} />
 			</div>
-		);
-	}
-}
+		</div>
+	);
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

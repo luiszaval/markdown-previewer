@@ -1,14 +1,10 @@
 import React from "react";
 import "./ReferenceTable.css";
 
-const ReferenceTable = ({ input, onChange }) => {
+const ReferenceTable = ({ referenceText }) => {
 	return (
 		<div className="reference-table">
-			<textarea
-				className="reference-table-editor"
-				value={input}
-				onChange={onChange}
-			/>
+			<div className="reference-text">{referenceText}</div>
 		</div>
 	);
 };
