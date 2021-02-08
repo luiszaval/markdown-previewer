@@ -1,9 +1,21 @@
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Share Tech Mono', monospace;
-  background-color: #4CA1AF;
+	margin: 0;
+	font-family: "Share Tech Mono", monospace;
+	background-color: #4ca1af;
+	width: 100vw;
+	height: 100vh;
 }
 
+textarea {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#root {
+	font-size: 15px;
+}

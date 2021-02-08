@@ -1,0 +1,21 @@
+.reference-table {
+	height: 35vh;
+	width: 100%;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+}
+
+.reference-table-editor {
+	height: 100%;
+	width: 100%;
+}
+
+.section {
+	font-size: 0.75em;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding-left: 15px;
+}
