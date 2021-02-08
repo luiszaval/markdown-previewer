@@ -3,13 +3,16 @@ import "./Editor.css";
 import "../Toolbar1/Toolbar1";
 import Toolbar1 from "../Toolbar1/Toolbar1";
 
-const Editor = ({ input, onChange }) => {
+const Editor = ({ input, updateInput }) => {
+	const handleChange = (event) => {
+		updateInput(event.target.value);
+	};
 	return (
 		<div className="editor">
 			<Toolbar1 />
 			<textarea
 				value={input}
-				onChange={onChange}
+				onChange={handleChange}
 				className="editor-textarea"
 			/>
 		</div>

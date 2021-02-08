@@ -14,13 +14,12 @@ const App = () => {
 	useEffect(() => {
 		updateInput(PLACEHOLDER);
 	}, []);
-
 	return (
 		<div className="app-wrapper">
-			<ReferenceTable referenceText={input} />
+			<ReferenceTable />
 			<div className="editable">
-				<Editor input={input} onChange={updateInput} />
-				<Previewer input={input} />
+				<Editor input={input} updateInput={updateInput} />
+				<Previewer raw_text={input} />
 			</div>
 		</div>
 	);
