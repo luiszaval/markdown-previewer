@@ -2,7 +2,7 @@ import React from "react";
 import "./ReferenceTable.css";
 import marked from "marked";
 
-import constants from "../App/constants.js";
+import constants from "../../constants.js";
 
 const ReferenceTable = ({ referenceText }) => {
 	const {

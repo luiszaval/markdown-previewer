@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
-import Editor from "../Editor/Editor.js";
-import Previewer from "../Previewer/Previewer.js";
-import ReferenceTable from "../ReferenceTable/ReferenceTable.js";
+import Editor from "../Components/Editor/Editor.js";
+import Previewer from "../Components/Previewer/Previewer.js";
+import ReferenceTable from "../Components/ReferenceTable/ReferenceTable.js";
 
-import constants from "./constants.js";
+import constants from "../constants.js";
 
 const App = () => {
 	const [input, updateInput] = useState("");
