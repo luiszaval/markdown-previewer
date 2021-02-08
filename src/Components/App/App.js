@@ -18,8 +18,18 @@ const App = () => {
 		<div className="app-wrapper">
 			<ReferenceTable />
 			<div className="editable">
-				<Editor input={input} updateInput={updateInput} />
-				<Previewer raw_text={input} />
+				<div className="container">
+					<div className="header">
+						<h1>Editor</h1>
+					</div>
+					<Editor input={input} updateInput={updateInput} />
+				</div>
+				<div className="container">
+					<div className="header">
+						<h1>Previewer</h1>
+					</div>
+					<Previewer raw_text={input} />
+				</div>
 			</div>
 		</div>
 	);
