@@ -8,11 +8,9 @@ Allows for instant feedback when creating a markdown file
 
 ### Hosted using Github Pages!
 
-```
-**npm install** //install dependencies
-**npm start** //run app at localhost:3000
-**npm run build** // build app for production
-```
+> **npm install** //install dependencies  
+> **npm start** //run app at localhost:3000  
+> **npm run build** // build app for production
 
 ## Learn More
 
