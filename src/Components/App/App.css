@@ -4,7 +4,7 @@
 }
 
 .editable {
-	height: 70vh;
+	height: 100%;
 	width: 100vw;
 	display: flex;
 	padding: 0.5em;

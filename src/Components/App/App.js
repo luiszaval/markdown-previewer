@@ -5,10 +5,11 @@ import Editor from "../Editor/Editor.js";
 import Previewer from "../Previewer/Previewer.js";
 import ReferenceTable from "../ReferenceTable/ReferenceTable.js";
 
-import { PLACEHOLDER } from "./constants.js";
+import constants from "./constants.js";
 
 const App = () => {
 	const [input, updateInput] = useState("");
+	const { PLACEHOLDER } = constants;
 
 	useEffect(() => {
 		updateInput(PLACEHOLDER);
