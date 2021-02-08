@@ -1,12 +1,13 @@
 .previewer {
-	background-color: #c0d8d8;
+	background-color: #aed6ff;
 	border: 2px solid black;
 	border-radius: 5px;
 	font-size: 1em;
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	padding: 0.5em;
 	overflow: scroll;
+	margin: 5px;
 }
 .preview {
 	blockquote {
