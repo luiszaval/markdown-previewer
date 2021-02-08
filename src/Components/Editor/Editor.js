@@ -4,9 +4,8 @@ import "../Toolbar1/Toolbar1";
 import Toolbar1 from "../Toolbar1/Toolbar1";
 
 const Editor = ({ input, updateInput }) => {
-	const handleChange = (event) => {
-		updateInput(event.target.value);
-	};
+	const handleChange = (e) => updateInput(e.target.value);
+
 	return (
 		<div className="editor">
 			<Toolbar1 />
